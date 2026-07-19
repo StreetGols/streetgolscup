@@ -13,7 +13,9 @@ const TOURNAMENT = {
   name: "StreetGols Cup",
   tagline: "#PLAYANYWHERE",
   dates: "Saturday, July 25, 2026 @ 11:00 AM",
-  location: "Location TBD — check Score7",
+  location: "85th Ave, Briarwood, NY 11435 — Basketball Courts",
+  locationNote: "Games are on the BASKETBALL COURTS at this address — not the soccer fields, not the park entrance. Head straight for the courts.",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=85th+Ave%2C+Briarwood%2C+NY+11435",
   format: "6-a-side (with substitutes) Futsal · Group Stage + Knockout",
 
   // Live tournament page on Score7 — bracket, schedule, live results.
@@ -138,6 +140,10 @@ const TOURNAMENT = {
   // ---- TOURNAMENT INFO CARDS ----------------------------------
   info: [
     {
+      title: "Venue",
+      type: "venue",
+    },
+    {
       title: "Schedule",
       body: "Full match schedule, court assignments, and kickoff times are posted and kept live on Score7 — that's the source of truth for when and where your team plays.",
       type: "text",
@@ -190,12 +196,19 @@ function renderHero() {
 
   const meta = document.getElementById("hero-meta");
   const chips = [
-    ["Dates", TOURNAMENT.dates],
-    ["Location", TOURNAMENT.location],
-    ["Format", TOURNAMENT.format],
+    ["Dates", TOURNAMENT.dates, null],
+    ["Location", TOURNAMENT.location, TOURNAMENT.mapsUrl],
+    ["Format", TOURNAMENT.format, null],
   ];
-  chips.forEach(([label, value]) => {
-    const chip = el("span", "meta-chip", `<strong>${label}:</strong> ${value}`);
+  chips.forEach(([label, value, url]) => {
+    const chip = url
+      ? el("a", "meta-chip meta-chip-link", `<strong>${label}:</strong> ${value} ↗`)
+      : el("span", "meta-chip", `<strong>${label}:</strong> ${value}`);
+    if (url) {
+      chip.href = url;
+      chip.target = "_blank";
+      chip.rel = "noopener noreferrer";
+    }
     meta.appendChild(chip);
   });
 }
@@ -303,6 +316,19 @@ function renderInfo() {
   const grid = document.getElementById("info-grid");
   TOURNAMENT.info.forEach(card => {
     const node = el("div", "info-card");
+
+    if (card.type === "venue") {
+      node.classList.add("info-card-venue");
+      node.innerHTML = `
+        <h3>${card.title}</h3>
+        <p class="venue-address">${TOURNAMENT.location}</p>
+        <p class="venue-note">📍 ${TOURNAMENT.locationNote}</p>
+        <a href="${TOURNAMENT.mapsUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline venue-map-btn">Open in Maps →</a>
+      `;
+      grid.appendChild(node);
+      return;
+    }
+
     const bodyHtml = card.type === "list"
       ? `<ul>${card.body.map(b => `<li>${b}</li>`).join("")}</ul>`
       : `<p>${card.body}</p>`;
