@@ -15,7 +15,7 @@ const TOURNAMENT = {
   dates: "Saturday, July 25, 2026 @ 11:00 AM",
   location: "85th Ave, Briarwood, NY 11435 — Basketball Courts",
   locationNote: "Games are on the BASKETBALL COURTS at this address — not the soccer fields, not the park entrance. Head straight for the courts.",
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=85th+Ave%2C+Briarwood%2C+NY+11435",
+  mapsUrl: "https://maps.app.goo.gl/BR1CKGsa8vHbpN4fA",
   format: "6-a-side (with substitutes) Futsal · Group Stage + Knockout",
 
   // Live tournament page on Score7 — bracket, schedule, live results.
