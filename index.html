@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreetGols Cup — Tournament Hub</title>
+<meta name="description" content="Everything you need for the StreetGols Cup: rules, sponsors, team rosters, groups, and live scores.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500;700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER / NAV ================= -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">SG</span>
+      <span class="brand-name">STREET<em>GOLS</em></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#rules" class="nav-rules">Rules</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#rosters">Rosters</a>
+      <a href="#live" class="nav-live">Live Scores</a>
+      <a href="#info">Info</a>
+      <a href="https://www.streetgols.org/" target="_blank" rel="noopener noreferrer" class="nav-external">streetgols.org ↗</a>
+      <a href="https://www.instagram.com/streetgols/" target="_blank" rel="noopener noreferrer" class="nav-external">Instagram ↗</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-tape" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow" id="hero-tagline">#PLAYANYWHERE</p>
+    <h1 class="hero-title" id="hero-title">TOURNAMENT<br>HUB</h1>
+    <p class="hero-sub" id="hero-name">Loading tournament…</p>
+
+    <div class="hero-meta" id="hero-meta">
+      <!-- filled by JS: dates / location -->
+    </div>
+
+    <div class="hero-cta">
+      <a href="#rules" class="btn btn-lime">Read the Rules</a>
+      <a href="#live" class="btn btn-outline">Live Scores</a>
+    </div>
+  </div>
+  <div class="hero-corner-stamp" aria-hidden="true">
+    <svg viewBox="0 0 120 120" width="100" height="100">
+      <circle cx="60" cy="60" r="56" fill="none" stroke="var(--lime)" stroke-width="3" stroke-dasharray="4 6"/>
+      <text x="60" y="55" text-anchor="middle" class="stamp-text">GAME</text>
+      <text x="60" y="75" text-anchor="middle" class="stamp-text">ON</text>
+    </svg>
+  </div>
+</section>
+
+<div class="hazard-divider" aria-hidden="true"></div>
+
+<!-- ================= RULES ================= -->
+<section class="section section-dark rules-section" id="rules">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="stamp stamp-orange">01</span>
+      <h2>Rules of the Court</h2>
+      <p class="section-note">Read before you lace up. Referees have final say on match day.</p>
+    </div>
+    <div class="rules-accordion" id="rules-accordion">
+      <!-- filled by JS -->
+    </div>
+  </div>
+</section>
+
+<div class="hazard-divider" aria-hidden="true"></div>
+
+<!-- ================= SPONSORS ================= -->
+<section class="section" id="sponsors">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="stamp">02</span>
+      <h2>Our Sponsors</h2>
+      <p class="section-note">Tap a sponsor to check out their page. This tournament runs because they back the block.</p>
+    </div>
+    <div class="sponsor-grid" id="sponsor-grid">
+      <!-- filled by JS -->
+    </div>
+  </div>
+</section>
+
+<div class="court-line" aria-hidden="true"></div>
+
+<!-- ================= ROSTERS ================= -->
+<section class="section" id="rosters">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="stamp">03</span>
+      <h2>Team Rosters &amp; Groups</h2>
+      <p class="section-note">Every squad, every group. Find your team and know who you're lining up against.</p>
+    </div>
+
+    <div class="group-tabs" id="group-tabs" role="tablist" aria-label="Tournament groups">
+      <!-- filled by JS -->
+    </div>
+
+    <div class="team-grid" id="team-grid">
+      <!-- filled by JS -->
+    </div>
+  </div>
+</section>
+
+<div class="hazard-divider" aria-hidden="true"></div>
+
+<!-- ================= LIVE SCORES ================= -->
+<section class="section section-dark live-section" id="live">
+  <div class="section-inner">
+    <div class="scoreboard">
+      <div class="scoreboard-top">
+        <span class="led-dot"></span> LIVE ON SCORE7
+      </div>
+      <h2 class="scoreboard-title">Follow Every Match<br>In Real Time</h2>
+      <p class="scoreboard-copy">Full bracket, group standings, match schedule and live scores are all tracked on Score7 — updated straight from the sideline.</p>
+      <a href="#" id="score7-link" target="_blank" rel="noopener noreferrer" class="btn btn-lime btn-lg">
+        Open Live Scores on Score7 →
+      </a>
+      <p class="scoreboard-fineprint">No app or account needed — works right in your phone's browser.</p>
+    </div>
+  </div>
+</section>
+
+<div class="court-line" aria-hidden="true"></div>
+
+<!-- ================= TOURNAMENT INFO ================= -->
+<section class="section" id="info">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="stamp">04</span>
+      <h2>Tournament Info</h2>
+      <p class="section-note">Everything else you need to know before game day.</p>
+    </div>
+
+    <div class="info-grid" id="info-grid">
+      <!-- filled by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">SG</span>
+      <span class="brand-name">STREET<em>GOLS</em></span>
+      <p>#PLAYANYWHERE</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Tournament</h4>
+        <a href="#rules">Rules</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#rosters">Rosters</a>
+        <a href="#live">Live Scores</a>
+        <a href="#info">Info</a>
+      </div>
+      <div>
+        <h4>StreetGols</h4>
+        <a href="https://www.streetgols.org/" target="_blank" rel="noopener noreferrer">streetgols.org</a>
+        <a href="https://www.instagram.com/streetgols/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.streetgols.org/fields" target="_blank" rel="noopener noreferrer">Find Pitches</a>
+        <a href="https://www.streetgols.org/event" target="_blank" rel="noopener noreferrer">Join Games</a>
+      </div>
+    </div>
+    <p class="footer-bottom">Built for the community. StreetGols © 2026.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
