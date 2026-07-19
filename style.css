@@ -255,6 +255,13 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 }
 .hero-meta .meta-chip strong { color: var(--lime); font-weight: 500; }
 
+.hero-meta a.meta-chip-link {
+  cursor: pointer;
+  border-color: var(--lime);
+  transition: background 0.15s ease;
+}
+.hero-meta a.meta-chip-link:hover { background: var(--asphalt-3); }
+
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
@@ -661,6 +668,29 @@ a.team-name:hover { color: var(--lime); text-decoration: underline; }
 }
 .info-card ul { padding-left: 18px; }
 .info-card li { margin-bottom: 6px; }
+
+.info-card-venue {
+  grid-column: 1 / -1;
+  border-color: var(--lime);
+  border-width: 2px;
+}
+
+.venue-address {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  color: var(--concrete);
+  margin-bottom: 12px !important;
+}
+
+.venue-note {
+  color: var(--lime) !important;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px !important;
+}
+
+.venue-map-btn { margin-top: 4px; }
 
 /* ================= FOOTER ================= */
 .site-footer {
