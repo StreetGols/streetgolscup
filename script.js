@@ -91,20 +91,17 @@ const TOURNAMENT = {
     },
   ],
 
-  // ---- GROUPS & ROSTERS --------------------------------------
-  // Pulled from Score7. Each team's name links to its Score7 team page.
-  // Add or remove teams/players freely — the UI adapts automatically.
-  // ---- GROUPS & ROSTERS --------------------------------------
+ // ---- GROUPS & ROSTERS --------------------------------------
 // Pulled from Score7. Each team's name links to its Score7 team page.
 // Add or remove teams/players freely — the UI adapts automatically.
 groups: [
   {
     group: "Group A",
     teams: [
-      { name: "BellaGen FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721966", players: ["Rudy Tax", "Jayden Coombs", "Jeremy Garcia", "Jaiden Warhawk", "Jayden Lopez", "Nafiz Patwary", "Sebas J", "Angel Zelaya", "Angel Ulloa", "David Perrin", "Emerson Portillo", "Jaden Matthews"] },
+      { name: "BellaGen FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721966", players: ["Rudy Tax", "Jayden Coombs", "Jeremy Garcia", "Jaiden Warhawk", "Jayden Lopez", "Nafiz Patwary", "Sebas J", "Angel Zelaya", "David Perrin", "Emerson Portillo", "Jaden Matthews"] },
       { name: "Bandicoots FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721967", players: ["Waqar Aslam", "Waleed Sawadago", "Sahriar Adel", "Mario Lobo", "Md Alve", "Kevin Ramos", "Jameel Sawadogo", "Josue Galindo"] },
       { name: "JMC Youth", url: "https://www.score7.io/tournaments/vchefesccl/p/18721973", players: ["Tahmid Sameen", "Moshiur Mayan", "Munna Moon", "Fahim Khan", "Wamim Hossain", "Jinan Rahman", "Rafi Khan", "Azwad Mohib", "m simon"] },
-      { name: "QuietStorm FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721976", players: [] },
+      { name: "QuietStorm FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721976", players: ["Ousman Diabate", "Hussein Yakubu", "Oumar Diabate", "Kofi Boadi", "Alex Boadi", "Ansumana Badjie", "Abdul Mumin Maswud"] },
       { name: "MS 217", url: "https://www.score7.io/tournaments/vchefesccl/p/18721977", players: ["Jose Rodriguez", "swagnik roy", "Kevin Gamez", "Kristoff Tracy", "Sattik Roy", "Adrian Balram", "Isaac Nunez", "Liam Hernandez", "Adam Aminov", "Alex Alatorre"] },
     ],
   },
@@ -113,7 +110,7 @@ groups: [
     teams: [
       { name: "Clear FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721963", players: ["Nahian Alam", "Nafis Jahan", "Ibrahim Abu Yousuf", "Anowar Maher", "Tamjid Chowdhury", "Jaber Zahir", "Talha Chowdhury", "Irfan Ahmed", "Tasnim Islam", "Shovodip Kanu"] },
       { name: "109 Jr.", url: "https://www.score7.io/tournaments/vchefesccl/p/18721964", players: ["Christian Rodas", "Brandon Castro", "Ryan Lopez", "Mohsin Shigri", "matthew marin", "Uday Mondal", "Ravin Singh", "Aidan Evans", "Bryan Castro"] },
-      { name: "Diamonds FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721972", players: ["Angel Torralba", "Marco Baez Ventura", "Brian Temoxtle", "Nysani Benedith", "Joshua Escobar Reyes", "Nicholas Acuapan", "Isabella Rodriguez", "Demian Rosas", "Marllyn Ramos", "Brayner"] },
+      { name: "Diamonds FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721972", players: ["Angel Torralba", "Marco Baez Ventura", "Brian Temoxtle", "Nysani Benedith", "Joshua Escobar Reyes", "Nicholas Acuapan", "Isabella Rodriguez", "Demian Rosas", "Marllyn Ramos", "Brayner", "Melody Rodriguez"] },
       { name: "Gladiators FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721975", players: ["Mallich Dieujuste", "Bryan Santisteban", "Nehan Khaleqe", "Araf Nabi", "Steven Shibu", "Justin Ponce", "Tawhid Akter", "Shiloh Belle"] },
       { name: "Street Soccer USA", url: "https://www.score7.io/tournaments/vchefesccl/p/19669510", players: ["Boubou Soukouna", "Abdoulie Sawaneh", "Terenz Guity", "Isael Aponte Rosario", "Omar Fofana", "Francis Cuchipe", "Alassane Zongo", "Cristian Ordóñez", "Jaidy Magiraga", "Tamba Torto"] },
     ],
@@ -124,7 +121,7 @@ groups: [
       { name: "Riverdale Warriors", url: "https://www.score7.io/tournaments/vchefesccl/p/18721962", players: ["Adyan Khan", "David Suastegui", "Xander Cosby", "Arham Khan", "Luke Serrano", "Azlan Khan", "Tahsan Latif"] },
       { name: "Madrid FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721971", players: ["Manu Atherley", "Alhoussaine BALDE", "Alhoussaine Balde", "Alvin Chowdhury", "Jason Plunkett", "Jordan Guerrero", "Mamoudou Diabate"] },
       { name: "Thomas Edison HS", url: "https://www.score7.io/tournaments/vchefesccl/p/18721974", players: ["Kishan Roy", "Juan Montes", "Derek Velez", "Armando Ojeda", "Aayat Hussain", "Chase Coley", "Jayden Paredes", "Islam Bourzak", "Andy ixcoy", "Muhammad Wasiuzzaman"] },
-      { name: "DaRe 2 DReam", url: "https://www.score7.io/tournaments/vchefesccl/p/19669507", players: ["Motaz Nasser", "Emmanuel Boadi", "Chorno Ismaila Badjie", "Swallah Mohammed", "Fadlulalzi Suhymi", "Ali Farouk", "Ameer Farouk", "Hassan Yakubu"] },
+      { name: "DaRe 2 DReam", url: "https://www.score7.io/tournaments/vchefesccl/p/19669507", players: ["Motaz Nasser", "Emmanuel Boadi", "Chorno Ismaila Badjie", "Swallah Mohammed", "Fadlulalzi Suhymi", "Ali Farouk", "Ameer Farouk", "Hassan Yakubu", "Alie Trawally"] },
       { name: "Rome FC", url: "https://www.score7.io/tournaments/vchefesccl/p/19669509", players: ["Shihab Shadique", "Rishad Alam", "Wasif Ahmed", "Shakeel Ali", "Md Tahsin", "Raghid Rayan", "Zavion Brown", "andres cabrera", "Sebastian Joestar", "Mirsab Forhad"] },
     ],
   },
@@ -135,7 +132,7 @@ groups: [
       { name: "QC FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721968", players: ["Abrar Khan", "Jordyn Juarez", "Jeremias Hernandez", "Abraham Gomez", "Alex Tamay", "Maynor Garcia", "Adriel Sandoval", "Sammy G", "Vitelio Ramirez", "Franklin Zacarias"] },
       { name: "Burros FC", url: "https://www.score7.io/tournaments/vchefesccl/p/18721969", players: ["Daniel Yushuvayev", "Carlos Duran", "Bryan Chimbo", "Krystian Grodzki", "Francesko Hila", "Jacob Finiasz", "Alexander Luna", "Almir Ndreu"] },
       { name: "FREE AGENT", url: "https://www.score7.io/tournaments/vchefesccl/p/18721970", players: ["Eugene Ward", "Saamir Ahmed", "Ramy Farag", "Damoy Brown", "David Enriquez", "Ashraful Alam"] },
-      { name: "Goddard FC", url: "https://www.score7.io/tournaments/vchefesccl/p/19669508", players: ["Tuhin T", "Manpreet Singh", "Sultan Ejaz", "Aditya Anand", "Muhit Ahmed", "Minhaj Sahil", "Ashraful Alom"] },
+      { name: "Goddard FC", url: "https://www.score7.io/tournaments/vchefesccl/p/19669508", players: ["Tuhin T", "Manpreet Singh", "Sultan Ejaz", "Aditya Anand", "Muhit Ahmed", "Minhaj Sahil", "Ashraful Alom", "Absar Ahmed", "Tyler Samuel"] },
     ],
   },
 ],
